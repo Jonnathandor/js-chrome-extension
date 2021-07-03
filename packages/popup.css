@@ -1,0 +1,25 @@
+body {
+    width: 450px;
+    height: 562px;
+}
+
+.greeting-container {
+    height: 50px;
+    background-color: aqua;
+}
+
+.save-container {
+    height: 50px;
+    background-color: yellow;
+}
+
+.item-container {
+    height: 200px;
+    background-color: orange;
+}
+
+.action-item {
+    height: 40px;
+    background-color: grey;
+    margin: 3px;
+}
