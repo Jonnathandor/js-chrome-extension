@@ -38,13 +38,39 @@ body {
     border-radius: 8px;
 }
 
-.item__container {
-    height: 200px;
-    background-color: orange;
-}
 
 .action__item {
-    height: 40px;
-    background-color: grey;
+    background-color: #f6f6f6;
+    border-radius: 10px;
     margin: 3px;
+    padding: 1rem;
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    border: 4px solid rgba(151, 151, 151, 0.27);
+}
+
+.action__item--text {
+    flex: 1;
+    margin-left: 10px;
+    word-break: break-word;
+    color: #727272;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.action__item--checkbox {
+    border: 4px solid rgba(151, 151, 151, 0.27);
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.action__item--checkbox i {
+    color: #56e452;
+}
+
+.action__item--delete {
+    cursor: pointer;
 }
