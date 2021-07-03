@@ -3,6 +3,10 @@ body {
     height: 562px;
 }
 
+.greeting__container {
+    height: 140px;
+}
+
 .greeting__type {
     color: #2f2f2f;
     font-weight: 200;
@@ -24,8 +28,14 @@ body {
 }
 
 .save__container {
-    height: 50px;
-    background-color: yellow;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.save__container button {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 8px;
 }
 
 .item__container {
