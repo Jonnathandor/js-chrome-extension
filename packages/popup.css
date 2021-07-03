@@ -3,22 +3,37 @@ body {
     height: 562px;
 }
 
-.greeting-container {
-    height: 50px;
-    background-color: aqua;
+.greeting__type {
+    color: #2f2f2f;
+    font-weight: 200;
 }
 
-.save-container {
+.greeting__name {
+    color: #6c757d;
+    font-size: 1.3rem;
+}
+
+.greeting__container img {
+    position: absolute;
+    height: 180px;
+    width: 100px;
+    top: -50px;
+    right: -20px;
+    z-index: 10;
+
+}
+
+.save__container {
     height: 50px;
     background-color: yellow;
 }
 
-.item-container {
+.item__container {
     height: 200px;
     background-color: orange;
 }
 
-.action-item {
+.action__item {
     height: 40px;
     background-color: grey;
     margin: 3px;
