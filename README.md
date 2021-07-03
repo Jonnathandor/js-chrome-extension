@@ -33,6 +33,7 @@ Create a Google Chrome extension that gives a user the ability to save links for
 
 * Use Javascript.
 * Use HTML.
-* Use CSS.
+* Use CSS and Bootstrap.
 * Use Chrome storage: https://developer.chrome.com/docs/extensions/reference/storage/
+* Follows Chrome extension's guidelines: https://developer.chrome.com/docs/extensions/mv3/getstarted/
 
