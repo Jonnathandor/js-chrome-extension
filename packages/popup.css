@@ -74,3 +74,7 @@ body {
 .action__item--delete {
     cursor: pointer;
 }
+
+.action__item--delete:hover {
+    color: red;
+}
