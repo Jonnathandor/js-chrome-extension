@@ -12,7 +12,6 @@ Create a Google Chrome extension that gives a user the ability to save links for
 * As a user I want to have a button that saves the current website link, so I can find it quickly in the extension.
 * As a user I want to see the links that I save in a list.
 * As a user I want to be able to remove the link from my list.
-* As a user I want to be able to mark the link as “checked”, so If I want to keep it in my list I can see that I have gone over it already.
 
 ## User Flow Diagram
 

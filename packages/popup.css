@@ -1,6 +1,7 @@
 body {
     width: 450px;
-    height: 562px;
+    min-height: 562px;
+    padding: 12px 12px 27px 12px;
 }
 
 .greeting__container {
@@ -19,10 +20,10 @@ body {
 
 .greeting__container img {
     position: absolute;
-    height: 180px;
+    height: 150px;
     width: 100px;
     top: -50px;
-    right: -20px;
+    right: -35px;
     z-index: 10;
 
 }
@@ -57,18 +58,6 @@ body {
     color: #727272;
     font-weight: bold;
     font-size: 18px;
-}
-
-.action__item--checkbox {
-    border: 4px solid rgba(151, 151, 151, 0.27);
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    cursor: pointer;
-}
-
-.action__item--checkbox i {
-    color: #56e452;
 }
 
 .action__item--delete {
