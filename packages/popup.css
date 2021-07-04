@@ -16,6 +16,17 @@ body {
 .greeting__name {
     color: #6c757d;
     font-size: 1.3rem;
+    cursor: pointer;
+    
+}
+
+.greeting__name i {
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+}
+
+.greeting__name:hover i {
+    opacity: 1;
 }
 
 .greeting__container img {
@@ -62,7 +73,7 @@ body {
 
 .action__item--delete {
     cursor: pointer;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
     margin-left: 10px;
 }
 
