@@ -12,5 +12,9 @@
             "128": "/images/icons128.png"
         }
     },
-    "permissions": ["storage", "tabs"]
+    "permissions": ["storage", "tabs"],
+    "background": {
+        "scripts": ["/js/background.js"],
+        "persistent": false
+    }
 }

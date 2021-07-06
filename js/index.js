@@ -66,7 +66,6 @@ const add = (title, icon, url) => {
     if(icon === undefined){
         icon = '../images/icons32.png';
     }
-    console.log(icon);
     let item = {
         id: uuidv4(),
         added: new Date().toString(),
