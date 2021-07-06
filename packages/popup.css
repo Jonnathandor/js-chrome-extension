@@ -73,7 +73,6 @@ body {
 
 .action__item--delete {
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
     margin-left: 10px;
 }
 

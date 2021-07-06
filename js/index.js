@@ -30,6 +30,7 @@ const deleteItemEvent = (e) => {
             items: filteredItems
         }, () => {
             parent.remove();
+            setBrowserData(filteredItems.length);
         });
     });
 }
@@ -62,6 +63,10 @@ const renderItem = (id, title, iconUrl, url) => {
 }
 
 const add = (title, icon, url) => {
+    if(icon === undefined){
+        icon = '../images/icons32.png';
+    }
+    console.log(icon);
     let item = {
         id: uuidv4(),
         added: new Date().toString(),
@@ -81,9 +86,10 @@ const add = (title, icon, url) => {
         chrome.storage.sync.set({
             items
         }, () => {
-            chrome.storage.sync.get('items', data => {
+            chrome.storage.sync.get(['items'], data => {
                 let lastItem = data.items[items.length - 1];
-                renderItem(item.id, lastItem.title, lastItem.icon, lastItem.url);
+                renderItem(lastItem.id, lastItem.title, lastItem.icon, lastItem.url);
+                setBrowserData(data.items.length);
             });
         });
     });
@@ -98,8 +104,13 @@ const getInitialData = () => {
         });
 
         setUserName(name);
+        setBrowserData(items.length);
     });
 
+}
+
+const setBrowserData = (totalItems) => {
+    chrome.browserAction.setBadgeText({text: `${totalItems}`});
 }
 
 getInitialData();
